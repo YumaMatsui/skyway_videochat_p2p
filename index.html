@@ -25,10 +25,25 @@
         <button href="#" class="pure-button pure-button-success" type="submit">Call</button>
       </form>
       <form id="end-call" class="pure-form">
-        <p>現在通話中　相手のID:  <span id="their-id">...</span></p>
+        <p>現在通話中 相手のID: <span id="their-id">...</span></p>
         <button href="#" class="pure-button pure-button-success" type="submit">End Call</button>
       </form>
     </div>
+
+    <!-- カメラ,マイクのOnOFF機能を追加-->
+    <!-- ミュート -->
+    <div class="toggle-mute">
+      <button id="js-toggle-camera">Toggle Camera</button>
+      <span id="camera-status"></span>
+      <br>
+
+      <button id="js-toggle-microphone">Toggle Microphone</button>
+      <span id="microphone-status"></span>
+      <!-- videoタグの要素 -->
+      <video id="js-local-stream"></video>
+      <br>
+    </div>
+    
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
